@@ -1,0 +1,142 @@
+
+<style>
+  /* כל העמוד */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* חצי העמוד השמאלי (שחור) */
+  .left-half {
+    float: left;
+    width: 50%;
+    background-color: black;
+    box-sizing: border-box; /* כולל גם padding ו-border בחישוב רוחב */
+    padding: 20px;
+    height: 100%;
+  }
+
+  /* חצי העמוד הימני (לבן) */
+  .right-half {
+    float: right;
+    width: 50%;
+    background-color: white-space;
+    box-sizing: border-box;
+    padding: 20px;
+    height: 100%;
+  }
+
+  /* תמונה */
+  .right-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 75%;
+    max-height: 100%;
+	margin-top:150px;
+  }
+
+  /* כפתור */
+  .button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    color: inherit; /* השתמש בצבע המוגדר לטקסט */
+  }
+/* כל העמוד */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* חצי העמוד השמאלי (שחור) */
+.left-half {
+  float: left;
+  width: 50%;
+  background-color: black;
+  box-sizing: border-box; /* כולל גם padding ו-border בחישוב רוחב */
+  padding: 20px;
+  height: 100%;
+}
+
+/* חצי העמוד הימני (לבן) */
+.right-half {
+  float: right;
+  width: 50%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 100%;
+
+}
+
+
+/* תמונה */
+.left-image  {
+  display: block;
+  margin: 0 auto;
+  max-width: 75%;
+  max-height: 100%;
+  margin-top:150px;
+
+}
+
+h1 {
+  font-family: Arial, sans-serif; /* בחירת גופן */
+  font-size: 60x; /* גודל הגופן */
+  font-weight: bold; /* עובי הגופן */
+  color: #fff;
+  text-align: center; /* יישור הטקסט */
+  margin-top: 80px; /* מרווח למעלה מהכותרת */
+  margin-bottom: 20px; /* מרווח למטה מהכותרת */
+   
+}
+h2 {
+  font-family: Arial, sans-serif; /* בחירת גופן */
+  font-size: 60x; /* גודל הגופן */
+  font-weight: bold; /* עובי הגופן */
+  color: #333;
+  text-align: center; /* יישור הטקסט */
+  margin-top: 80px; /* מרווח למעלה מהכותרת */
+  margin-bottom: 20px; /* מרווח למטה מהכותרת */
+}
+h1
+/* גודל התמונה במצב הרגיל */
+.left-image:hover,
+.right-image:hover {
+  transform: scale(1.3); 
+}
+
+/* גודל התמונה בעת hover */
+.left-image
+:hover {
+  z-index: 1; /* כדי שהתמונה שמאלית תופיע מעל התמונה הימנית */
+}
+
+.right-image:hover {
+  z-index:1;
+}
+
+.left-image:hover,
+.right-image:hover {
+  border: 4px solid orange; /* רוחב הגבול וסוג הקו */
+  box-sizing: border-box; /* כלול padding ו-border בחישוב הרוחב */
+  padding: 4px; /* מרווח בין הגבול לתמונה */
+}
+``
+/* אנימציה של התמונה */
+.left-image,
+.right-image {
+  transition: transform 0.3s ease; /* התמונה תתמיד 0.3 שניות להתאים לשינוי בגודלה */
+}
+
+/* הגדלת התמונה בעת hover */
+.left-image:hover,
+.right-image:hover {
+  transform: scale(1.1); /* הגדלת התמונה ב-10% */
+}
