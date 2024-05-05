@@ -54,27 +54,6 @@ html, body {
   padding: 0;
 }
 
-/* חצי העמוד השמאלי (שחור) */
-.left-half {
-  float: left;
-  width: 50%;
-  background-color: black;
-  box-sizing: border-box; /* כולל גם padding ו-border בחישוב רוחב */
-  padding: 20px;
-  height: 100%;
-}
-
-/* חצי העמוד הימני (לבן) */
-.right-half {
-  float: right;
-  width: 50%;
-  background-color: white;
-  box-sizing: border-box;
-  padding: 20px;
-  height: 100%;
-
-}
-
 
 /* תמונה */
 .left-image  {
@@ -140,11 +119,4 @@ h1
 .right-image:hover {
   transform: scale(1.1); /* הגדלת התמונה ב-10% */
 }
-/* תמונה */
-.left-image,
-.right-image {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%; /* גודל תמונה מקסימלי */
-  max-height: 40%; /* גובה תמונה מקסימלי */
-}
+
