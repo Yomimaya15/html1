@@ -140,3 +140,11 @@ h1
 .right-image:hover {
   transform: scale(1.1); /* הגדלת התמונה ב-10% */
 }
+/* תמונה */
+.left-image,
+.right-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%; /* גודל תמונה מקסימלי */
+  max-height: 40%; /* גובה תמונה מקסימלי */
+}
