@@ -119,7 +119,7 @@ h1
 .right-image:hover {
   transform: scale(1.1); /* הגדלת התמונה ב-10% */
 }
-@media only screen and (max-width: 428px) {
+@media only screen and (max-width: 400px) {
     /* סגנון CSS עבור מסך עם רוחב עד 428 פיקסלים (iPhone 14) */
     body {
         font-size: 12px;
