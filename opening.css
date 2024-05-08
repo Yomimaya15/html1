@@ -131,7 +131,8 @@ h1
         background-color: black;
         box-sizing: border-box;
         padding: 0;
-        height: 40%; /* גובה של חצי העמוד ב-40% */
+        height: calc(50% - 20px); /* גובה של חצי העמוד ב-50% עם מרווחים נוספים */
+        margin-bottom: 20px; /* מרווח בין חצי העמודים */
     }
 
     /* חצי העמוד הימני (לבן) */
@@ -140,7 +141,7 @@ h1
         background-color: white;
         box-sizing: border-box;
         padding: 0;
-        height: 40%; /* גובה של חצי העמוד ב-40% */
+        height: calc(50% - 20px); /* גובה של חצי העמוד ב-50% עם מרווחים נוספים */
     }
 
     /* תמונה */
@@ -149,7 +150,9 @@ h1
         display: block;
         margin: 0 auto;
         width: 80%; /* התאמה של רוחב התמונות לחצי העמוד */
-        max-width: 190%; /* התאמה של רוחב התמונות לחצי העמוד */
+        max-width: 100%; /* התאמה של רוחב התמונות לחצי העמוד */
         height: auto; /* כדי לשמור על יחסי תצוגה */
         margin-top: 20px; /* מרווח למעלה מהתמונות */
         margin-bottom: 20px; /* מרווח למטה מהתמונות */
+    }
+}
