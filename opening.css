@@ -119,4 +119,37 @@ h1
 .right-image:hover {
   transform: scale(1.1); /* הגדלת התמונה ב-10% */
 }
+@media only screen and (max-width: 428px) {
+    /* סגנון CSS עבור מסך עם רוחב עד 428 פיקסלים (iPhone 14) */
+    body {
+        font-size: 12px;
+    }
 
+    /* חצי העמוד השמאלי (שחור) */
+    .left-half {
+        width: 100%;
+        background-color: black;
+        box-sizing: border-box;
+        padding: 0;
+        height: 40%; /* גובה של חצי העמוד ב-40% */
+    }
+
+    /* חצי העמוד הימני (לבן) */
+    .right-half {
+        width: 100%;
+        background-color: white;
+        box-sizing: border-box;
+        padding: 0;
+        height: 40%; /* גובה של חצי העמוד ב-40% */
+    }
+
+    /* תמונה */
+    .left-image,
+    .right-image {
+        display: block;
+        margin: 0 auto;
+        width: 80%; /* התאמה של רוחב התמונות לחצי העמוד */
+        max-width: 190%; /* התאמה של רוחב התמונות לחצי העמוד */
+        height: auto; /* כדי לשמור על יחסי תצוגה */
+        margin-top: 20px; /* מרווח למעלה מהתמונות */
+        margin-bottom: 20px; /* מרווח למטה מהתמונות */
